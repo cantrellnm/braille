@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Braille Translator (English)</title>
+  </head>
+  <style>
+    body  {
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  </style>
+  <body>
+    <button id="translate">Translate Current Page</button>
+    
+    <fieldset>
+      <legend>Original text:</legend>
+      <label>
+        <input type="radio" name="original" value="none" />
+        Hidden
+      </label>
+      <label>
+        <input type="radio" name="original" value="hover" />
+        Hover
+      </label>
+      <label>
+        <input type="radio" name="original" value="above" />
+        Above
+      </label>
+    </fieldset>
+
+    <label>
+      <input type="checkbox" id="contractedSingle" />
+      Single-Cell Contractions
+    </label>
+    <label>
+      <input type="checkbox" id="contractedMultiple" />
+      Multi-Cell Contractions
+    </label>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
